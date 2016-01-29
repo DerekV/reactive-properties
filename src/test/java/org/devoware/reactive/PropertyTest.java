@@ -208,7 +208,8 @@ public class PropertyTest {
     verify(strengthListener, times(1)).onValueChanged(any(), any());
     verify(strengthModifierListener, times(1)).onValueChanged(any(), any());
   }
-  
+
+  @Test
   public void test_validators() {
     
     try {
@@ -425,4 +426,5 @@ public class PropertyTest {
 
     assertThat(manager.get(DARKVISION).get(), equalTo("Darkvision (0 ft.)"));
   }
+
 }
